@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Nodalix — Sistemas Digitales, Webs &amp; Agentes IA 24/7</title>
+  <meta name="description" content="Ayudamos a empresas y negocios a vender 24/7 y escalar con webs de alta conversión, agentes IA en WhatsApp/CRM, SaaS MVPs en 7–14 días y automatización n8n con 100% propiedad del código." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Golden Nodalix — Digital &amp; AI Solutions Studio" />
+  <meta property="og:description" content="Webs High-Conversion, Agentes IA 24/7 (WhatsApp/CRM), SaaS MVPs en 7–14 días y Rescate Vibe-to-Production. Calcula tu ahorro ROI ahora." />
+  <meta property="og:image" content="https://agenciaiaonline-wq.github.io/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://agenciaiaonline-wq.github.io/og-cover.png" />
+  <style>
+    :root {
+      --bg: #070B14;
+      --bg-card: rgba(15, 23, 42, 0.86);
+      --bg-soft: rgba(30, 41, 59, 0.55);
+      --gold: #D4AF37;
+      --gold-light: #F3D979;
+      --emerald: #10B981;
+      --emerald-light: #6EE7B7;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --border: rgba(212, 175, 55, 0.28);
+      --border-soft: rgba(148, 163, 184, 0.16);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+      background:
+        radial-gradient(circle at 85% 8%, rgba(212, 175, 55, 0.14), transparent 38%),
+        radial-gradient(circle at 12% 35%, rgba(16, 185, 129, 0.10), transparent 36%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 22px; }
+
+    /* Nav */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(7, 11, 20, 0.82);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 70px; gap: 16px;
+    }
+    .brand { display: flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: 0.04em; }
+    .brand-mark {
+      width: 36px; height: 36px; border-radius: 10px;
+      border: 1.5px solid var(--gold);
+      background: rgba(212, 175, 55, 0.14);
+      color: var(--gold-light);
+      display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800;
+    }
+    .nav-links { display: flex; gap: 22px; font-size: 14px; font-weight: 600; color: #CBD5E1; }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .lang-btn {
+      background: var(--bg-soft); border: 1px solid var(--border-soft);
+      color: var(--text); padding: 7px 12px; border-radius: 8px;
+      font-size: 13px; font-weight: 700; cursor: pointer;
+    }
+    .lang-btn:hover { border-color: var(--gold); color: var(--gold-light); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 11px 20px; border-radius: 10px; font-weight: 800; font-size: 14px;
+      cursor: pointer; border: none; transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-gold {
+      background: linear-gradient(90deg, #D4AF37, #F3D979);
+      color: #070B14;
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.25);
+    }
+    .btn-outline {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid var(--border);
+      color: var(--gold-light);
+    }
+    .btn-emerald {
+      background: linear-gradient(90deg, #10B981, #34D399);
+      color: #070B14;
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.25);
+    }
+
+    /* Hero */
+    .hero { padding: 72px 0 54px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; border-radius: 999px;
+      background: rgba(212, 175, 55, 0.10); border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--gold-light); font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+    }
+    .dot-live { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald); box-shadow: 0 0 10px var(--emerald); }
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 56px); line-height: 1.08; font-weight: 800;
+      letter-spacing: -0.025em; margin: 18px 0 18px; max-width: 900px;
+    }
+    .gold { color: var(--gold-light); }
+    .emerald { color: var(--emerald-light); }
+    .hero p.lead { font-size: clamp(17px, 2vw, 20px); color: #CBD5E1; max-width: 780px; margin-bottom: 28px; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 42px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .kpi-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 20px;
+    }
+    .kpi-val { font-size: 28px; font-weight: 800; color: var(--gold-light); line-height: 1.1; }
+    .kpi-lbl { font-size: 13px; color: var(--muted); margin-top: 6px; font-weight: 600; }
+
+    /* Sections */
+    section { padding: 64px 0; border-top: 1px solid var(--border-soft); }
+    .sec-head { max-width: 760px; margin-bottom: 36px; }
+    .sec-head h2 { font-size: clamp(26px, 3.6vw, 38px); line-height: 1.15; font-weight: 800; margin-top: 10px; letter-spacing: -0.02em; }
+    .sec-head p { color: var(--muted); margin-top: 10px; font-size: 16.5px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+    .card {
+      background: var(--bg-card); border: 1px solid var(--border-soft); border-radius: 18px;
+      padding: 26px; display: flex; flex-direction: column; justify-content: space-between; gap: 14px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .card:hover { border-color: var(--border); transform: translateY(-2px); }
+    .card-tag { font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); }
+    .card h3 { font-size: 20px; font-weight: 800; color: #FFF; line-height: 1.25; }
+    .card p { font-size: 14.5px; color: #CBD5E1; }
+    .card-meta {
+      display: flex; justify-content: space-between; align-items: center; gap: 8px;
+      padding-top: 12px; border-top: 1px solid var(--border-soft); font-size: 13px; font-weight: 700;
+    }
+    .tag-emerald { color: var(--emerald-light); }
+    .tag-price { color: var(--gold-light); font-family: Consolas, monospace; }
+
+    /* ROI Calculator */
+    .calc-wrap {
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(9, 13, 22, 0.96));
+      border: 1.5px solid var(--border); border-radius: 22px; padding: 34px;
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 32px; align-items: center;
+    }
+    .slider-group { margin-bottom: 20px; }
+    .slider-top { display: flex; justify-content: space-between; font-weight: 700; font-size: 14.5px; margin-bottom: 8px; }
+    .slider-val { color: var(--gold-light); font-family: Consolas, monospace; }
+    input[type="range"] { width: 100%; accent-color: #D4AF37; cursor: pointer; height: 6px; }
+    .calc-results {
+      background: rgba(7, 11, 20, 0.88); border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 16px;
+    }
+    .res-item { border-bottom: 1px solid var(--border-soft); padding-bottom: 12px; }
+    .res-item:last-of-type { border-bottom: none; padding-bottom: 0; }
+    .res-lbl { font-size: 13px; color: var(--muted); font-weight: 600; }
+    .res-num { font-size: 30px; font-weight: 800; color: var(--emerald-light); line-height: 1.15; margin-top: 4px; }
+
+    /* Guarantee */
+    .guarantee-box {
+      background: rgba(212, 175, 55, 0.08); border: 1.5px solid rgba(212, 175, 55, 0.42);
+      border-radius: 18px; padding: 28px; margin-top: 28px;
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    details.faq-item {
+      background: var(--bg-card); border: 1px solid var(--border-soft); border-radius: 14px; padding: 18px 22px;
+    }
+    details.faq-item summary { cursor: pointer; font-weight: 700; font-size: 16px; color: #FFF; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    details.faq-item summary::after { content: "+"; color: var(--gold-light); font-size: 20px; font-weight: 800; }
+    details.faq-item[open] summary::after { content: "−"; }
+    details.faq-item p { margin-top: 12px; font-size: 14.5px; color: #CBD5E1; }
+
+    /* Footer */
+    footer { padding: 54px 0 80px; border-top: 1px solid var(--border-soft); }
+    .footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: center; }
+    .channel-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .c-pill {
+      padding: 9px 15px; border-radius: 10px; background: var(--bg-card); border: 1px solid var(--border-soft);
+      font-size: 13.5px; font-weight: 700; color: #E2E8F0;
+    }
+    .c-pill:hover { border-color: var(--gold); color: var(--gold-light); }
+
+    .wa-float {
+      position: fixed; right: 22px; bottom: 22px; z-index: 60;
+      background: linear-gradient(90deg, #10B981, #34D399); color: #070B14;
+      font-weight: 800; font-size: 14px; padding: 13px 20px; border-radius: 999px;
+      box-shadow: 0 12px 30px rgba(16, 185, 129, 0.35);
+    }
+
+    @media (max-width: 920px) {
+      .nav-links { display: none; }
+      .kpi-grid, .grid-2, .grid-3, .calc-wrap { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="brand">
+        <span class="brand-mark">GN</span>
+        <span>GOLDEN NODALIX</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#services" data-i18n="nav_services">Servicios</a>
+        <a href="#calculator" data-i18n="nav_calc">Calculadora ROI</a>
+        <a href="#blueprints" data-i18n="nav_blueprints">Blueprints</a>
+        <a href="#process" data-i18n="nav_process">Proceso</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-btn" type="button">EN / ES</button>
+        <a class="btn btn-gold" href="https://wa.me/51906135229?text=Hola%20Golden%20Nodalix%2C%20quiero%20una%20auditoria%20gratuita%20para%20mi%20negocio" target="_blank" rel="noopener" data-i18n="nav_cta">Auditoría Gratis</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" style="border-top:none;">
+      <div class="container">
+        <span class="eyebrow"><span class="dot-live"></span><span data-i18n="hero_eyebrow">DIGITAL &amp; AI SOLUTIONS STUDIO · EN / ES · REMOTO GLOBAL</span></span>
+        <h1 data-i18n-html="hero_title">Sistemas Digitales, Webs &amp; Agentes IA que <span class="gold">Venden y Escalan 24/7</span></h1>
+        <p class="lead" data-i18n="hero_lead">Ayudamos a negocios, agencias y empresas B2B a captar más clientes y recortar costos operativos: desde webs de alta conversión y agentes WhatsApp/CRM hasta SaaS MVPs y rescate de apps IA en 7–14 días.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-emerald" href="https://wa.me/51906135229?text=Hola%20Golden%20Nodalix%2C%20quiero%20una%20auditoria%20gratuita%20para%20mi%20negocio" target="_blank" rel="noopener" data-i18n="hero_cta1">Solicitar Diagnóstico Gratis (WhatsApp)</a>
+          <a class="btn btn-outline" href="#blueprints" data-i18n="hero_cta2">Ver Código en Producción (GitHub)</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/agency-golden-nodalix-880598438/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="kpi-grid">
+          <div class="kpi-card"><div class="kpi-val">7–14 días</div><div class="kpi-lbl" data-i18n="kpi1">Entrega de sprints cerrados en producción</div></div>
+          <div class="kpi-card"><div class="kpi-val">&lt; 10 seg</div><div class="kpi-lbl" data-i18n="kpi2">Respuesta automática 24/7 en WhatsApp &amp; Web</div></div>
+          <div class="kpi-card"><div class="kpi-val">-80%</div><div class="kpi-lbl" data-i18n="kpi3">Ahorro mensual migrando Zapier/Make a n8n</div></div>
+          <div class="kpi-card"><div class="kpi-val">100%</div><div class="kpi-lbl" data-i18n="kpi4">Propiedad del código en tu propio GitHub</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pain -> Solution -->
+    <section id="pain">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-i18n="pain_eye">EL CUELLO DE BOTELLA REAL</span>
+          <h2 data-i18n-html="pain_title">Por qué hoy los negocios pierden <span class="gold">ventas y margen</span> cada semana</h2>
+          <p data-i18n="pain_sub">No te falta más teoría ni otra suscripción cara: necesitas sistemas digitales conectados que conviertan tráfico en caja sin fricción.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-tag">01 · SPEED-TO-LEAD</div>
+            <h3 data-i18n="p1_t">Leads que se enfrían por responder tarde</h3>
+            <p data-i18n="p1_d">Si un cliente escribe por WhatsApp o formulario web y nadie responde en menos de 5 minutos, compra con tu competencia. Instalamos agentes IA 24/7 que cotizan y agendan al instante.</p>
+          </div>
+          <div class="card">
+            <div class="card-tag">02 · CONVERSIÓN WEB</div>
+            <h3 data-i18n="p2_t">Webs lentas que no generan reuniones</h3>
+            <p data-i18n="p2_d">Sitios genéricos sin propuesta clara ni embudo conectado al CRM. Diseñamos webs ultrarrápidas en Next.js con copywriting B2B orientado a llamadas y cierres.</p>
+          </div>
+          <div class="card">
+            <div class="card-tag">03 · COSTOS SAAS</div>
+            <h3 data-i18n="p3_t">Facturas infladas en Zapier, Make y herramientas</h3>
+            <p data-i18n="p3_d">Pagar por cada tarea ejecutada frena tu crecimiento. Migramos tus flujos a n8n self-hosted sobre Docker con Redis y PostgreSQL reduciendo costos hasta un 80%.</p>
+          </div>
+          <div class="card">
+            <div class="card-tag">04 · VIBE-CODING STUCK</div>
+            <h3 data-i18n="p4_t">Prototipos hechos con IA que fallan en producción</h3>
+            <p data-i18n="p4_d">Apps creadas en Lovable, Bolt.new, v0 o Replit con tablas Supabase abiertas, llaves filtradas o Stripe roto. Las auditamos y blindamos en 5–10 días para que puedas facturar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-i18n="srv_eye">SERVICIOS DIGITALES PRODUCTIZADOS</span>
+          <h2 data-i18n-html="srv_title">Soluciones llave en mano con <span class="gold">alcance y retorno claro</span></h2>
+          <p data-i18n="srv_sub">Cada servicio se entrega documentado, testeado y corriendo en tu infraestructura con 100% de propiedad del código.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div>
+              <div class="card-tag">VENTAS &amp; ATENCIÓN 24/7</div>
+              <h3 data-i18n="s1_t">Agentes IA en WhatsApp, Web &amp; CRM</h3>
+              <p data-i18n="s1_d">Calificación automática de clientes, respuestas con tu catálogo/PDFs, dedupe con Redis, registro en CRM y reserva directa en Cal.com/Google Calendar.</p>
+            </div>
+            <div class="card-meta"><span class="tag-emerald">7–10 días</span><span class="tag-price">$1,800 – $6,500+</span></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="card-tag">WEB &amp; LANDINGS CRO</div>
+              <h3 data-i18n="s2_t">Webs de Alta Conversión &amp; Portales</h3>
+              <p data-i18n="s2_d">Sitios corporativos, landing pages B2B y portales de clientes en Next.js 15 + TypeScript optimizados para SEO, velocidad Core Web Vitals y captación.</p>
+            </div>
+            <div class="card-meta"><span class="tag-emerald">7–14 días</span><span class="tag-price">$1,500 – $5,500+</span></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="card-tag">SOFTWARE &amp; SAAS</div>
+              <h3 data-i18n="s3_t">SaaS MVPs &amp; Dashboards BI</h3>
+              <p data-i18n="s3_d">Plataformas multi-tenant listas para cobrar: autenticación, roles RBAC, Supabase PostgreSQL RLS, webhooks idempotentes de Stripe y métricas MRR/SLA.</p>
+            </div>
+            <div class="card-meta"><span class="tag-emerald">10–14 días</span><span class="tag-price">$4,000 – $15,000</span></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="card-tag">RESCATE &amp; SEGURIDAD</div>
+              <h3 data-i18n="s4_t">Vibe-to-Production Rescue</h3>
+              <p data-i18n="s4_d">Auditoría de 35 puntos para Lovable, Bolt.new, v0 y Replit: cierre de brechas RLS, traslado de API keys al backend, refactor modular y CI/CD.</p>
+            </div>
+            <div class="card-meta"><span class="tag-emerald">5–10 días</span><span class="tag-price">$2,500 – $8,000</span></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="card-tag">AUTOMATIZACIÓN &amp; OPS</div>
+              <h3 data-i18n="s5_t">Migración Zapier/Make → n8n</h3>
+              <p data-i18n="s5_d">Despliegue de n8n self-hosted en Docker, reingeniería de flujos críticos, colas con reintentos, alertas y acompañamiento SLA opcional.</p>
+            </div>
+            <div class="card-meta"><span class="tag-emerald">5–10 días</span><span class="tag-price">-80% gasto SaaS</span></div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="card-tag">IA PRIVADA &amp; DATOS</div>
+              <h3 data-i18n="s6_t">RAG Corporativo &amp; Extracción PDF</h3>
+              <p data-i18n="s6_d">Buscadores internos con citas verificables (FastAPI + Qdrant) y pipelines automáticos para convertir facturas, contratos o reportes en JSON/SQL.</p>
+            </div>
+            <div class="card-meta"><span class="tag-emerald">10–14 días</span><span class="tag-price">$3,500 – $12,000</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive ROI Calculator -->
+    <section id="calculator">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-i18n="calc_eye">CALCULADORA INTERACTIVA DE ROI</span>
+          <h2 data-i18n-html="calc_title">Estima tu <span class="gold">ahorro mensual y ventas recuperadas</span></h2>
+          <p data-i18n="calc_sub">Ajusta tus números actuales para estimar el impacto de migrar a n8n self-hosted y responder leads en menos de 10 segundos 24/7.</p>
+        </div>
+        <div class="calc-wrap">
+          <div>
+            <div class="slider-group">
+              <div class="slider-top"><span data-i18n="c_l1">Gasto mensual actual en Zapier / Make / SaaS</span><span class="slider-val" id="vZapier">$450/mo</span></div>
+              <input id="rZapier" type="range" min="100" max="2500" step="50" value="450" />
+            </div>
+            <div class="slider-group">
+              <div class="slider-top"><span data-i18n="c_l2">Consultas o leads mensuales (WhatsApp / Web)</span><span class="slider-val" id="vLeads">180 / mo</span></div>
+              <input id="rLeads" type="range" min="20" max="1000" step="10" value="180" />
+            </div>
+            <div class="slider-group" style="margin-bottom:0;">
+              <div class="slider-top"><span data-i18n="c_l3">Ticket promedio por cliente cerrado (USD)</span><span class="slider-val" id="vTicket">$600</span></div>
+              <input id="rTicket" type="range" min="100" max="5000" step="50" value="600" />
+            </div>
+          </div>
+          <div class="calc-results">
+            <div class="res-item">
+              <div class="res-lbl" data-i18n="c_r1">Ahorro anual estimado en licencias (Zapier → n8n Docker)</div>
+              <div class="res-num" id="outSaasSave">$4,980 / yr</div>
+            </div>
+            <div class="res-item">
+              <div class="res-lbl" data-i18n="c_r2">Ingresos mensuales recuperables (+10% conversión por respuesta &lt;10s)</div>
+              <div class="res-num" id="outRevLift">+$10,800 / mo</div>
+            </div>
+            <a id="calcWaBtn" class="btn btn-emerald" href="https://wa.me/51906135229" target="_blank" rel="noopener" data-i18n="c_btn">Enviar este escenario por WhatsApp →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live GitHub Blueprints -->
+    <section id="blueprints">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-i18n="bp_eye">PORTAFOLIO AUDITABLE EN GITHUB</span>
+          <h2 data-i18n-html="bp_title">6 Blueprints Reales que Puedes <span class="gold">Inspeccionar Hoy</span></h2>
+          <p data-i18n="bp_sub">Cada repositorio demuestra arquitectura limpia, seguridad RLS y foco en resultados comerciales reales.</p>
+        </div>
+        <div class="grid-3">
+          <a class="card" href="https://github.com/agenciaiaonline-wq/whatsapp-ai-sales-agent-n8n" target="_blank" rel="noopener">
+            <div><div class="card-tag">WHATSAPP + N8N + REDIS</div><h3>whatsapp-ai-sales-agent-n8n</h3><p data-i18n="b1">Motor comercial 24/7 con WAHA, Redis dedupe, PostgreSQL y agenda automática en Cal.com.</p></div>
+            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">Python · n8n</span></div>
+          </a>
+          <a class="card" href="https://github.com/agenciaiaonline-wq/nextjs-supabase-saas-mvp-starter" target="_blank" rel="noopener">
+            <div><div class="card-tag">SAAS MVP · MULTI-TENANT</div><h3>nextjs-supabase-saas-mvp-starter</h3><p data-i18n="b2">Starter Next.js 15 App Router + Supabase RLS estricto + RBAC + webhooks de Stripe.</p></div>
+            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">TypeScript</span></div>
+          </a>
+          <a class="card" href="https://github.com/agenciaiaonline-wq/vibe-to-production-audit-kit" target="_blank" rel="noopener">
+            <div><div class="card-tag">SECURITY RESCUE</div><h3>vibe-to-production-audit-kit</h3><p data-i18n="b3">Auditoría de 35 puntos, SQL RLS y escáner de secretos para Lovable, Bolt, v0 y Replit.</p></div>
+            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">Python · SQL</span></div>
+          </a>
+          <a class="card" href="https://github.com/agenciaiaonline-wq/nextjs-b2b-bi-dashboard-starter" target="_blank" rel="noopener">
+            <div><div class="card-tag">PORTALES B2B &amp; BI</div><h3>nextjs-b2b-bi-dashboard-starter</h3><p data-i18n="b4">Dashboard ejecutivo de KPIs, tracking MRR/SLA y API JSON tipada para portales B2B.</p></div>
+            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">TypeScript</span></div>
+          </a>
+          <a class="card" href="https://github.com/agenciaiaonline-wq/enterprise-rag-fastapi-starter" target="_blank" rel="noopener">
+            <div><div class="card-tag">PRIVATE RAG &amp; PDF</div><h3>enterprise-rag-fastapi-starter</h3><p data-i18n="b5">API FastAPI + Qdrant con citas de página verificadas y extracción estructurada de PDFs.</p></div>
+            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">Python · FastAPI</span></div>
+          </a>
+          <a class="card" href="https://github.com/agenciaiaonline-wq/claude-code-hermes-24-7-automation" target="_blank" rel="noopener">
+            <div><div class="card-tag">AUTONOMOUS DEVOPS</div><h3>claude-code-hermes-24-7-automation</h3><p data-i18n="b6">Stack 24/7 con Claude Code CLI, Hermes Agent, OmniRoute failover, Watchdog y Docker.</p></div>
+            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">Python · Docker</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process & Guarantee -->
+    <section id="process">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow" data-i18n="pr_eye">METODOLOGÍA SIN RIESGO</span>
+          <h2 data-i18n-html="pr_title">Cómo pasamos de tu necesidad a <span class="gold">producción en 3 pasos</span></h2>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-tag">PASO 01 · DÍA 1</div>
+            <h3 data-i18n="pr1_t">Auditoría Gratis de 15 Min</h3>
+            <p data-i18n="pr1_d">Analizamos tu web, embudo o procesos actuales y te entregamos un roadmap claro con presupuesto cerrado y retorno estimado.</p>
+          </div>
+          <div class="card">
+            <div class="card-tag">PASO 02 · DÍAS 2–14</div>
+            <h3 data-i18n="pr2_t">Sprint Cerrado con Demos</h3>
+            <p data-i18n="pr2_d">Construimos con arquitectura modular, seguridad RLS/RBAC, pruebas automáticas y avances visibles cada pocos días.</p>
+          </div>
+          <div class="card">
+            <div class="card-tag">PASO 03 · ENTREGA</div>
+            <h3 data-i18n="pr3_t">Despliegue y Control Total</h3>
+            <p data-i18n="pr3_d">Todo queda desplegado en tu nube/servidor y repositorio GitHub. Cero dependencia oculta; soporte SLA mensual solo si lo necesitas.</p>
+          </div>
+        </div>
+        <div class="guarantee-box">
+          <div>
+            <strong style="color:var(--gold-light); font-size:18px;" data-i18n="g_t">Garantía Golden Nodalix: 100% Propiedad del Código + Cero Lock-in</strong>
+            <p style="color:#CBD5E1; font-size:14.5px; margin-top:4px;" data-i18n="g_d">Cupos limitados a 2 sprints productivos por mes para garantizar ejecución senior directa.</p>
+          </div>
+          <a class="btn btn-gold" href="https://wa.me/51906135229?text=Hola%20Golden%20Nodalix%2C%20quiero%20reservar%20mi%20auditoria%20gratuita" target="_blank" rel="noopener" data-i18n="g_cta">Reservar Diagnóstico →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">PREGUNTAS FRECUENTES</span>
+          <h2 data-i18n-html="faq_title">Respuestas directas antes de <span class="gold">empezar</span></h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary data-i18n="f1_q">¿El código y las automatizaciones quedan a mi nombre?</summary>
+            <p data-i18n="f1_a">Sí, 100%. Entregamos repositorios, workflows n8n, bases de datos y documentación técnica directamente en tu GitHub y servidores propios.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="f2_q">¿Trabajan solo con empresas tech o también con negocios tradicionales?</summary>
+            <p data-i18n="f2_a">Con ambos. Implementamos webs y bots de ventas en WhatsApp para clínicas, inmobiliarias, e-commerce y agencias, además de SaaS MVPs y RAG para startups B2B.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="f3_q">¿Cómo iniciamos sin compromiso?</summary>
+            <p data-i18n="f3_a">Escríbenos por WhatsApp o LinkedIn con la palabra "AUDITORIA". En menos de 15 minutos evaluamos tu caso y te damos un plan accionable.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:8px;"><span class="brand-mark">GN</span><span>GOLDEN NODALIX</span></div>
+        <p style="color:var(--muted); font-size:13.5px;" data-i18n="foot_sub">Lima, Perú · Remoto Mundial (LATAM · USA · Europa · EN / ES)</p>
+      </div>
+      <div class="channel-pills">
+        <a class="c-pill" href="https://wa.me/51906135229" target="_blank" rel="noopener">WhatsApp +51 906 135 229</a>
+        <a class="c-pill" href="https://www.linkedin.com/in/agency-golden-nodalix-880598438/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="c-pill" href="https://github.com/agenciaiaonline-wq" target="_blank" rel="noopener">GitHub</a>
+        <a class="c-pill" href="https://www.fiverr.com/agencia_nodalix" target="_blank" rel="noopener">Fiverr</a>
+        <a class="c-pill" href="mailto:agencia.ia.online@gmail.com">agencia.ia.online@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/51906135229?text=Hola%20Golden%20Nodalix%2C%20quiero%20una%20auditoria%20gratuita" target="_blank" rel="noopener" data-i18n="wa_float">💬 WhatsApp Directo</a>
+
+  <script>
+    const i18n = {
+      es: {
+        nav_services: "Servicios", nav_calc: "Calculadora ROI", nav_blueprints: "Blueprints", nav_process: "Proceso", nav_cta: "Auditoría Gratis",
+        hero_eyebrow: "DIGITAL & AI SOLUTIONS STUDIO · EN / ES · REMOTO GLOBAL",
+        hero_title: 'Sistemas Digitales, Webs &amp; Agentes IA que <span class="gold">Venden y Escalan 24/7</span>',
+        hero_lead: "Ayudamos a negocios, agencias y empresas B2B a captar más clientes y recortar costos operativos: desde webs de alta conversión y agentes WhatsApp/CRM hasta SaaS MVPs y rescate de apps IA en 7–14 días.",
+        hero_cta1: "Solicitar Diagnóstico Gratis (WhatsApp)", hero_cta2: "Ver Código en Producción (GitHub)",
+        kpi1: "Entrega de sprints cerrados en producción", kpi2: "Respuesta automática 24/7 en WhatsApp & Web", kpi3: "Ahorro mensual migrando Zapier/Make a n8n", kpi4: "Propiedad del código en tu propio GitHub",
+        pain_eye: "EL CUELLO DE BOTELLA REAL", pain_title: 'Por qué hoy los negocios pierden <span class="gold">ventas y margen</span> cada semana',
+        pain_sub: "No te falta más teoría ni otra suscripción cara: necesitas sistemas digitales conectados que conviertan tráfico en caja sin fricción.",
+        p1_t: "Leads que se enfrían por responder tarde", p1_d: "Si un cliente escribe por WhatsApp o formulario web y nadie responde en menos de 5 minutos, compra con tu competencia. Instalamos agentes IA 24/7 que cotizan y agendan al instante.",
+        p2_t: "Webs lentas que no generan reuniones", p2_d: "Sitios genéricos sin propuesta clara ni embudo conectado al CRM. Diseñamos webs ultrarrápidas en Next.js con copywriting B2B orientado a llamadas y cierres.",
+        p3_t: "Facturas infladas en Zapier, Make y herramientas", p3_d: "Pagar por cada tarea ejecutada frena tu crecimiento. Migramos tus flujos a n8n self-hosted sobre Docker con Redis y PostgreSQL reduciendo costos hasta un 80%.",
+        p4_t: "Prototipos hechos con IA que fallan en producción", p4_d: "Apps creadas en Lovable, Bolt.new, v0 o Replit con tablas Supabase abiertas, llaves filtradas o Stripe roto. Las auditamos y blindamos en 5–10 días para que puedas facturar.",
+        srv_eye: "SERVICIOS DIGITALES PRODUCTIZADOS", srv_title: 'Soluciones llave en mano con <span class="gold">alcance y retorno claro</span>',
+        srv_sub: "Cada servicio se entrega documentado, testeado y corriendo en tu infraestructura con 100% de propiedad del código.",
+        s1_t: "Agentes IA en WhatsApp, Web & CRM", s1_d: "Calificación automática de clientes, respuestas con tu catálogo/PDFs, dedupe con Redis, registro en CRM y reserva directa en Cal.com/Google Calendar.",
+        s2_t: "Webs de Alta Conversión & Portales", s2_d: "Sitios corporativos, landing pages B2B y portales de clientes en Next.js 15 + TypeScript optimizados para SEO, velocidad Core Web Vitals y captación.",
+        s3_t: "SaaS MVPs & Dashboards BI", s3_d: "Plataformas multi-tenant listas para cobrar: autenticación, roles RBAC, Supabase PostgreSQL RLS, webhooks idempotentes de Stripe y métricas MRR/SLA.",
+        s4_t: "Vibe-to-Production Rescue", s4_d: "Auditoría de 35 puntos para Lovable, Bolt.new, v0 y Replit: cierre de brechas RLS, traslado de API keys al backend, refactor modular y CI/CD.",
+        s5_t: "Migración Zapier/Make → n8n", s5_d: "Despliegue de n8n self-hosted en Docker, reingeniería de flujos críticos, colas con reintentos, alertas y acompañamiento SLA opcional.",
+        s6_t: "RAG Corporativo & Extracción PDF", s6_d: "Buscadores internos con citas verificables (FastAPI + Qdrant) y pipelines automáticos para convertir facturas, contratos o reportes en JSON/SQL.",
+        calc_eye: "CALCULADORA INTERACTIVA DE ROI", calc_title: 'Estima tu <span class="gold">ahorro mensual y ventas recuperadas</span>',
+        calc_sub: "Ajusta tus números actuales para estimar el impacto de migrar a n8n self-hosted y responder leads en menos de 10 segundos 24/7.",
+        c_l1: "Gasto mensual actual en Zapier / Make / SaaS", c_l2: "Consultas o leads mensuales (WhatsApp / Web)", c_l3: "Ticket promedio por cliente cerrado (USD)",
+        c_r1: "Ahorro anual estimado en licencias (Zapier → n8n Docker)", c_r2: "Ingresos mensuales recuperables (+10% conversión por respuesta <10s)", c_btn: "Enviar este escenario por WhatsApp →",
+        bp_eye: "PORTAFOLIO AUDITABLE EN GITHUB", bp_title: '6 Blueprints Reales que Puedes <span class="gold">Inspeccionar Hoy</span>',
+        bp_sub: "Cada repositorio demuestra arquitectura limpia, seguridad RLS y foco en resultados comerciales reales.",
+        b1: "Motor comercial 24/7 con WAHA, Redis dedupe, PostgreSQL y agenda automática en Cal.com.",
+        b2: "Starter Next.js 15 App Router + Supabase RLS estricto + RBAC + webhooks de Stripe.",
+        b3: "Auditoría de 35 puntos, SQL RLS y escáner de secretos para Lovable, Bolt, v0 y Replit.",
+        b4: "Dashboard ejecutivo de KPIs, tracking MRR/SLA y API JSON tipada para portales B2B.",
+        b5: "API FastAPI + Qdrant con citas de página verificadas y extracción estructurada de PDFs.",
+        b6: "Stack 24/7 con Claude Code CLI, Hermes Agent, OmniRoute failover, Watchdog y Docker.",
+        pr_eye: "METODOLOGÍA SIN RIESGO", pr_title: 'Cómo pasamos de tu necesidad a <span class="gold">producción en 3 pasos</span>',
+        pr1_t: "Auditoría Gratis de 15 Min", pr1_d: "Analizamos tu web, embudo o procesos actuales y te entregamos un roadmap claro con presupuesto cerrado y retorno estimado.",
+        pr2_t: "Sprint Cerrado con Demos", pr2_d: "Construimos con arquitectura modular, seguridad RLS/RBAC, pruebas automáticas y avances visibles cada pocos días.",
+        pr3_t: "Despliegue y Control Total", pr3_d: "Todo queda desplegado en tu nube/servidor y repositorio GitHub. Cero dependencia oculta; soporte SLA mensual solo si lo necesitas.",
+        g_t: "Garantía Golden Nodalix: 100% Propiedad del Código + Cero Lock-in",
+        g_d: "Cupos limitados a 2 sprints productivos por mes para garantizar ejecución senior directa.", g_cta: "Reservar Diagnóstico →",
+        faq_title: 'Respuestas directas antes de <span class="gold">empezar</span>',
+        f1_q: "¿El código y las automatizaciones quedan a mi nombre?", f1_a: "Sí, 100%. Entregamos repositorios, workflows n8n, bases de datos y documentación técnica directamente en tu GitHub y servidores propios.",
+        f2_q: "¿Trabajan solo con empresas tech o también con negocios tradicionales?", f2_a: "Con ambos. Implementamos webs y bots de ventas en WhatsApp para clínicas, inmobiliarias, e-commerce y agencias, además de SaaS MVPs y RAG para startups B2B.",
+        f3_q: "¿Cómo iniciamos sin compromiso?", f3_a: "Escríbenos por WhatsApp o LinkedIn con la palabra \"AUDITORIA\". En menos de 15 minutos evaluamos tu caso y te damos un plan accionable.",
+        foot_sub: "Lima, Perú · Remoto Mundial (LATAM · USA · Europa · EN / ES)", wa_float: "💬 WhatsApp Directo"
+      },
+      en: {
+        nav_services: "Services", nav_calc: "ROI Calculator", nav_blueprints: "Blueprints", nav_process: "Process", nav_cta: "Free Audit",
+        hero_eyebrow: "DIGITAL & AI SOLUTIONS STUDIO · EN / ES · REMOTE WORLDWIDE",
+        hero_title: 'Digital Systems, Webs &amp; AI Agents That <span class="gold">Sell &amp; Scale 24/7</span>',
+        hero_lead: "We help businesses, agencies, and B2B teams capture more leads and slash operational costs: from high-converting websites and WhatsApp/CRM AI agents to SaaS MVPs and AI app rescues in 7–14 days.",
+        hero_cta1: "Request Free Audit (WhatsApp)", hero_cta2: "Inspect Production Code (GitHub)",
+        kpi1: "Turnkey sprint delivery into production", kpi2: "24/7 automated reply on WhatsApp & Web", kpi3: "Monthly savings migrating Zapier/Make to n8n", kpi4: "Full source code ownership on your GitHub",
+        pain_eye: "THE REAL BOTTLENECK", pain_title: 'Why businesses lose <span class="gold">deals and margin</span> every week',
+        pain_sub: "You don't need another overpriced SaaS tool—you need connected digital systems that turn traffic into revenue automatically.",
+        p1_t: "Leads going cold from slow replies", p1_d: "If a prospect messages your WhatsApp or web form and waits over 5 minutes, they buy elsewhere. We deploy 24/7 AI agents that quote and book instantly.",
+        p2_t: "Slow websites that fail to convert", p2_d: "Generic sites with weak positioning and zero CRM routing. We ship ultra-fast Next.js websites with B2B conversion copy engineered for booked calls.",
+        p3_t: "Bloated Zapier, Make & SaaS bills", p3_d: "Paying per-task penalties slows growth. We migrate your critical workflows to self-hosted n8n on Docker + Redis + PostgreSQL, cutting costs up to 80%.",
+        p4_t: "Vibe-coded AI prototypes breaking at launch", p4_d: "Lovable, Bolt.new, v0, or Replit apps with open Supabase tables, leaked keys, or broken Stripe webhooks. We harden and ship them in 5–10 days.",
+        srv_eye: "PRODUCTIZED DIGITAL SERVICES", srv_title: 'Turnkey systems with <span class="gold">fixed scope &amp; clear ROI</span>',
+        srv_sub: "Every deliverable ships documented, tested, and running on your own infrastructure with 100% code ownership.",
+        s1_t: "24/7 WhatsApp, Web & CRM AI Agents", s1_d: "Automated lead qualification, RAG catalog quoting, Redis dedupe/debounce, CRM sync, and instant Cal.com/Google Calendar booking.",
+        s2_t: "High-Conversion Webs & B2B Portals", s2_d: "Corporate websites, CRO landing pages, and client portals built on Next.js 15 + TypeScript for top Core Web Vitals and pipeline conversion.",
+        s3_t: "SaaS MVPs & Real-Time BI Dashboards", s3_d: "Revenue-ready multi-tenant platforms: auth, RBAC, strict Supabase RLS, idempotent Stripe billing, and executive MRR/SLA metrics.",
+        s4_t: "Vibe-to-Production Security Rescue", s4_d: "35-point audit for Lovable, Bolt.new, v0 & Replit apps: lock down RLS, move secrets server-side, modular refactor, and CI/CD.",
+        s5_t: "Zapier/Make → n8n Cost Migration", s5_d: "Self-hosted n8n Docker stack, resilient queues and retries, error alerting, and optional monthly SLA support.",
+        s6_t: "Private Enterprise RAG & PDF Extraction", s6_d: "Internal AI search with verified page citations (FastAPI + Qdrant) and structured JSON/SQL extraction pipelines for invoices and contracts.",
+        calc_eye: "INTERACTIVE ROI CALCULATOR", calc_title: 'Estimate your <span class="gold">annual savings &amp; recovered revenue</span>',
+        calc_sub: "Adjust your current numbers to estimate the impact of self-hosted n8n and sub-10s 24/7 AI lead response.",
+        c_l1: "Current monthly Zapier / Make / SaaS spend", c_l2: "Monthly inbound leads (WhatsApp / Web)", c_l3: "Average deal value per closed client (USD)",
+        c_r1: "Estimated annual license savings (Zapier → n8n Docker)", c_r2: "Monthly recoverable revenue (+10% lift from <10s reply)", c_btn: "Send this scenario on WhatsApp →",
+        bp_eye: "AUDITABLE GITHUB PORTFOLIO", bp_title: '6 Production Blueprints You Can <span class="gold">Inspect Today</span>',
+        bp_sub: "Every repository demonstrates clean architecture, RLS security, and real commercial outcomes.",
+        b1: "24/7 sales engine with WAHA, Redis dedupe, PostgreSQL & Cal.com auto-booking.",
+        b2: "Next.js 15 App Router + strict Supabase RLS + RBAC + idempotent Stripe webhooks.",
+        b3: "35-point checklist, SQL RLS audits & secret scanner for Lovable, Bolt, v0 & Replit.",
+        b4: "Executive KPI dashboard, MRR/SLA tracking & typed JSON API for B2B portals.",
+        b5: "FastAPI + Qdrant retrieval with page citations & structured PDF extraction.",
+        b6: "24/7 stack with Claude Code CLI, Hermes Agent, OmniRoute failover, Watchdog & Docker.",
+        pr_eye: "ZERO-FRICTION METHODOLOGY", pr_title: 'From bottleneck to <span class="gold">production in 3 steps</span>',
+        pr1_t: "Free 15-Min Growth Audit", pr1_d: "We inspect your site, funnel, or workflow and deliver a clear roadmap with fixed pricing and projected ROI.",
+        pr2_t: "Fixed 7–14 Day Sprint", pr2_d: "Modular engineering with RLS/RBAC security, automated checks, and visible progress milestones.",
+        pr3_t: "Deployment & Full Ownership", pr3_d: "Deployed cleanly on your cloud and GitHub repo. Zero vendor lock-in; optional SLA retainer only if you want one.",
+        g_t: "Golden Nodalix Guarantee: 100% Source Ownership + Zero Lock-in",
+        g_d: "Limited to 2 active sprint slots per month to guarantee direct senior engineering.", g_cta: "Book Free Audit →",
+        faq_title: 'Direct answers before <span class="gold">we start</span>',
+        f1_q: "Do I own 100% of the code and automations?", f1_a: "Yes. Repositories, n8n workflows, databases, and technical docs are delivered straight to your GitHub and cloud infrastructure.",
+        f2_q: "Do you work only with tech startups or also traditional businesses?", f2_a: "Both. We build high-converting websites and WhatsApp AI sales bots for clinics, real estate, e-commerce, and agencies, as well as SaaS MVPs and RAG for B2B startups.",
+        f3_q: "How do we start with zero commitment?", f3_a: "Message us on WhatsApp or LinkedIn with \"AUDIT\". Within 15 minutes we review your case and share an actionable plan.",
+        foot_sub: "Lima, Peru · Remote Worldwide (LATAM · USA · Europe · EN / ES)", wa_float: "💬 Direct WhatsApp"
+      }
+    };
+
+    let currentLang = "es";
+    function applyLang(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      const dict = i18n[lang];
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const k = el.getAttribute("data-i18n");
+        if (dict[k]) el.textContent = dict[k];
+      });
+      document.querySelectorAll("[data-i18n-html]").forEach(el => {
+        const k = el.getAttribute("data-i18n-html");
+        if (dict[k]) el.innerHTML = dict[k];
+      });
+      updateCalc();
+    }
+
+    const rZapier = document.getElementById("rZapier");
+    const rLeads = document.getElementById("rLeads");
+    const rTicket = document.getElementById("rTicket");
+
+    function updateCalc() {
+      const z = Number(rZapier.value);
+      const l = Number(rLeads.value);
+      const t = Number(rTicket.value);
+      const selfHostCost = 35;
+      const annualSave = Math.max(0, (z - selfHostCost) * 12);
+      const revLift = Math.round(l * 0.10 * t);
+
+      document.getElementById("vZapier").textContent = `$${z.toLocaleString()}/mo`;
+      document.getElementById("vLeads").textContent = `${l.toLocaleString()} / mo`;
+      document.getElementById("vTicket").textContent = `$${t.toLocaleString()}`;
+      document.getElementById("outSaasSave").textContent = `$${annualSave.toLocaleString()} / ${currentLang === "es" ? "año" : "yr"}`;
+      document.getElementById("outRevLift").textContent = `+$${revLift.toLocaleString()} / ${currentLang === "es" ? "mes" : "mo"}`;
+
+      const msg = currentLang === "es"
+        ? `Hola Golden Nodalix, calculé mi ROI: gasto $${z}/mes en SaaS, recibo ${l} leads/mes (ticket $${t}). Quiero mi auditoría gratuita.`
+        : `Hi Golden Nodalix, I calculated my ROI: $${z}/mo SaaS spend, ${l} leads/mo ($${t} avg ticket). I want my free growth audit.`;
+      document.getElementById("calcWaBtn").href = `https://wa.me/51906135229?text=${encodeURIComponent(msg)}`;
+    }
+
+    document.getElementById("langToggle").addEventListener("click", () => {
+      applyLang(currentLang === "es" ? "en" : "es");
+    });
+    [rZapier, rLeads, rTicket].forEach(el => el.addEventListener("input", updateCalc));
+    applyLang("es");
+  </script>
+</body>
+</html>
