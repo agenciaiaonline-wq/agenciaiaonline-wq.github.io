@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Golden Nodalix — Sistemas Digitales, Webs &amp; Agentes IA 24/7</title>
+  <link rel="canonical" href="https://agenciaiaonline-wq.github.io/" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070B14' stroke='%23D4AF37' stroke-width='3'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Segoe UI,Arial,sans-serif' font-size='26' font-weight='800' fill='%23F3D979'%3EGN%3C/text%3E%3C/svg%3E" />
   <meta name="description" content="Ayudamos a empresas y negocios a vender 24/7 y escalar con webs de alta conversión, agentes IA en WhatsApp/CRM, SaaS MVPs en 7–14 días y automatización n8n con 100% propiedad del código." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agenciaiaonline-wq.github.io/" />
   <meta property="og:title" content="Golden Nodalix — Digital &amp; AI Solutions Studio" />
   <meta property="og:description" content="Webs High-Conversion, Agentes IA 24/7 (WhatsApp/CRM), SaaS MVPs en 7–14 días y Rescate Vibe-to-Production. Calcula tu ahorro ROI ahora." />
   <meta property="og:image" content="https://agenciaiaonline-wq.github.io/og-cover.png" />
@@ -196,6 +199,18 @@
       .nav-links { display: none; }
       .kpi-grid, .grid-2, .grid-3, .calc-wrap { grid-template-columns: 1fr; }
     }
+    @media (max-width: 640px) {
+      .nav { height: 62px; gap: 8px; }
+      .brand { font-size: 13.5px; gap: 7px; white-space: nowrap; }
+      .brand-mark { width: 30px; height: 30px; font-size: 12px; border-radius: 8px; flex-shrink: 0; }
+      .nav-actions { gap: 6px; flex-shrink: 0; }
+      .lang-btn { padding: 6px 9px; font-size: 12px; white-space: nowrap; }
+      .nav .btn-gold { padding: 8px 11px; font-size: 12px; white-space: nowrap; }
+      .hero { padding: 40px 0 38px; }
+      .hero-ctas { margin-bottom: 26px; }
+      footer { padding: 44px 0 92px; }
+      .wa-float { right: 14px; bottom: 14px; padding: 10px 15px; font-size: 13px; }
+    }
   </style>
 </head>
 <body>
@@ -232,8 +247,8 @@
           <a class="btn btn-outline" href="https://www.linkedin.com/in/golden-nodalix/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
         <div class="kpi-grid">
-          <div class="kpi-card"><div class="kpi-val">7–14 días</div><div class="kpi-lbl" data-i18n="kpi1">Entrega de sprints cerrados en producción</div></div>
-          <div class="kpi-card"><div class="kpi-val">&lt; 10 seg</div><div class="kpi-lbl" data-i18n="kpi2">Respuesta automática 24/7 en WhatsApp &amp; Web</div></div>
+          <div class="kpi-card"><div class="kpi-val" data-i18n="kpi1_v">7–14 días</div><div class="kpi-lbl" data-i18n="kpi1">Entrega de sprints cerrados en producción</div></div>
+          <div class="kpi-card"><div class="kpi-val" data-i18n="kpi2_v">&lt; 10 seg</div><div class="kpi-lbl" data-i18n="kpi2">Respuesta automática 24/7 en WhatsApp &amp; Web</div></div>
           <div class="kpi-card"><div class="kpi-val">-80%</div><div class="kpi-lbl" data-i18n="kpi3">Ahorro mensual migrando Zapier/Make a n8n</div></div>
           <div class="kpi-card"><div class="kpi-val">100%</div><div class="kpi-lbl" data-i18n="kpi4">Propiedad del código en tu propio GitHub</div></div>
         </div>
@@ -255,12 +270,12 @@
             <p data-i18n="p1_d">Si un cliente escribe por WhatsApp o formulario web y nadie responde en menos de 5 minutos, compra con tu competencia. Instalamos agentes IA 24/7 que cotizan y agendan al instante.</p>
           </div>
           <div class="card">
-            <div class="card-tag">02 · CONVERSIÓN WEB</div>
+            <div class="card-tag" data-i18n="p2_tag">02 · CONVERSIÓN WEB</div>
             <h3 data-i18n="p2_t">Webs lentas que no generan reuniones</h3>
             <p data-i18n="p2_d">Sitios genéricos sin propuesta clara ni embudo conectado al CRM. Diseñamos webs ultrarrápidas en Next.js con copywriting B2B orientado a llamadas y cierres.</p>
           </div>
           <div class="card">
-            <div class="card-tag">03 · COSTOS SAAS</div>
+            <div class="card-tag" data-i18n="p3_tag">03 · COSTOS SAAS</div>
             <h3 data-i18n="p3_t">Facturas infladas en Zapier, Make y herramientas</h3>
             <p data-i18n="p3_d">Pagar por cada tarea ejecutada frena tu crecimiento. Migramos tus flujos a n8n self-hosted sobre Docker con Redis y PostgreSQL reduciendo costos hasta un 80%.</p>
           </div>
@@ -284,19 +299,19 @@
         <div class="grid-3">
           <div class="card">
             <div>
-              <div class="card-tag">VENTAS &amp; ATENCIÓN 24/7</div>
+              <div class="card-tag" data-i18n="s1_tag">VENTAS &amp; ATENCIÓN 24/7</div>
               <h3 data-i18n="s1_t">Agentes IA en WhatsApp, Web &amp; CRM</h3>
               <p data-i18n="s1_d">Calificación automática de clientes, respuestas con tu catálogo/PDFs, dedupe con Redis, registro en CRM y reserva directa en Cal.com/Google Calendar.</p>
             </div>
-            <div class="card-meta"><span class="tag-emerald">7–10 días</span><span class="tag-price">$1,800 – $6,500+</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="d_7_10">7–10 días</span><span class="tag-price">$1,800 – $6,500+</span></div>
           </div>
           <div class="card">
             <div>
-              <div class="card-tag">WEB &amp; LANDINGS CRO</div>
+              <div class="card-tag" data-i18n="s2_tag">WEB &amp; LANDINGS CRO</div>
               <h3 data-i18n="s2_t">Webs de Alta Conversión &amp; Portales</h3>
               <p data-i18n="s2_d">Sitios corporativos, landing pages B2B y portales de clientes en Next.js 15 + TypeScript optimizados para SEO, velocidad Core Web Vitals y captación.</p>
             </div>
-            <div class="card-meta"><span class="tag-emerald">7–14 días</span><span class="tag-price">$1,500 – $5,500+</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="d_7_14">7–14 días</span><span class="tag-price">$1,500 – $5,500+</span></div>
           </div>
           <div class="card">
             <div>
@@ -304,31 +319,31 @@
               <h3 data-i18n="s3_t">SaaS MVPs &amp; Dashboards BI</h3>
               <p data-i18n="s3_d">Plataformas multi-tenant listas para cobrar: autenticación, roles RBAC, Supabase PostgreSQL RLS, webhooks idempotentes de Stripe y métricas MRR/SLA.</p>
             </div>
-            <div class="card-meta"><span class="tag-emerald">10–14 días</span><span class="tag-price">$4,000 – $15,000</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="d_10_14">10–14 días</span><span class="tag-price">$4,000 – $15,000</span></div>
           </div>
           <div class="card">
             <div>
-              <div class="card-tag">RESCATE &amp; SEGURIDAD</div>
+              <div class="card-tag" data-i18n="s4_tag">RESCATE &amp; SEGURIDAD</div>
               <h3 data-i18n="s4_t">Vibe-to-Production Rescue</h3>
               <p data-i18n="s4_d">Auditoría de 35 puntos para Lovable, Bolt.new, v0 y Replit: cierre de brechas RLS, traslado de API keys al backend, refactor modular y CI/CD.</p>
             </div>
-            <div class="card-meta"><span class="tag-emerald">5–10 días</span><span class="tag-price">$2,500 – $8,000</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="d_5_10">5–10 días</span><span class="tag-price">$2,500 – $8,000</span></div>
           </div>
           <div class="card">
             <div>
-              <div class="card-tag">AUTOMATIZACIÓN &amp; OPS</div>
+              <div class="card-tag" data-i18n="s5_tag">AUTOMATIZACIÓN &amp; OPS</div>
               <h3 data-i18n="s5_t">Migración Zapier/Make → n8n</h3>
               <p data-i18n="s5_d">Despliegue de n8n self-hosted en Docker, reingeniería de flujos críticos, colas con reintentos, alertas y acompañamiento SLA opcional.</p>
             </div>
-            <div class="card-meta"><span class="tag-emerald">5–10 días</span><span class="tag-price">-80% gasto SaaS</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="d_5_10">5–10 días</span><span class="tag-price" data-i18n="p_80">-80% gasto SaaS</span></div>
           </div>
           <div class="card">
             <div>
-              <div class="card-tag">IA PRIVADA &amp; DATOS</div>
+              <div class="card-tag" data-i18n="s6_tag">IA PRIVADA &amp; DATOS</div>
               <h3 data-i18n="s6_t">RAG Corporativo &amp; Extracción PDF</h3>
               <p data-i18n="s6_d">Buscadores internos con citas verificables (FastAPI + Qdrant) y pipelines automáticos para convertir facturas, contratos o reportes en JSON/SQL.</p>
             </div>
-            <div class="card-meta"><span class="tag-emerald">10–14 días</span><span class="tag-price">$3,500 – $12,000</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="d_10_14">10–14 días</span><span class="tag-price">$3,500 – $12,000</span></div>
           </div>
         </div>
       </div>
@@ -360,11 +375,11 @@
           <div class="calc-results">
             <div class="res-item">
               <div class="res-lbl" data-i18n="c_r1">Ahorro anual estimado en licencias (Zapier → n8n Docker)</div>
-              <div class="res-num" id="outSaasSave">$4,980 / yr</div>
+              <div class="res-num" id="outSaasSave">$4,980 / año</div>
             </div>
             <div class="res-item">
               <div class="res-lbl" data-i18n="c_r2">Ingresos mensuales recuperables (+10% conversión por respuesta &lt;10s)</div>
-              <div class="res-num" id="outRevLift">+$10,800 / mo</div>
+              <div class="res-num" id="outRevLift">+$10,800 / mes</div>
             </div>
             <a id="calcWaBtn" class="btn btn-emerald" href="https://wa.me/51906135229" target="_blank" rel="noopener" data-i18n="c_btn">Enviar este escenario por WhatsApp →</a>
           </div>
@@ -383,27 +398,27 @@
         <div class="grid-3">
           <a class="card" href="https://github.com/agenciaiaonline-wq/whatsapp-ai-sales-agent-n8n" target="_blank" rel="noopener">
             <div><div class="card-tag">WHATSAPP + N8N + REDIS</div><h3>whatsapp-ai-sales-agent-n8n</h3><p data-i18n="b1">Motor comercial 24/7 con WAHA, Redis dedupe, PostgreSQL y agenda automática en Cal.com.</p></div>
-            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">Python · n8n</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="view_repo">Ver repositorio →</span><span class="tag-price">Python · n8n</span></div>
           </a>
           <a class="card" href="https://github.com/agenciaiaonline-wq/nextjs-supabase-saas-mvp-starter" target="_blank" rel="noopener">
             <div><div class="card-tag">SAAS MVP · MULTI-TENANT</div><h3>nextjs-supabase-saas-mvp-starter</h3><p data-i18n="b2">Starter Next.js 15 App Router + Supabase RLS estricto + RBAC + webhooks de Stripe.</p></div>
-            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">TypeScript</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="view_repo">Ver repositorio →</span><span class="tag-price">TypeScript</span></div>
           </a>
           <a class="card" href="https://github.com/agenciaiaonline-wq/vibe-to-production-audit-kit" target="_blank" rel="noopener">
             <div><div class="card-tag">SECURITY RESCUE</div><h3>vibe-to-production-audit-kit</h3><p data-i18n="b3">Auditoría de 35 puntos, SQL RLS y escáner de secretos para Lovable, Bolt, v0 y Replit.</p></div>
-            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">Python · SQL</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="view_repo">Ver repositorio →</span><span class="tag-price">Python · SQL</span></div>
           </a>
           <a class="card" href="https://github.com/agenciaiaonline-wq/nextjs-b2b-bi-dashboard-starter" target="_blank" rel="noopener">
-            <div><div class="card-tag">PORTALES B2B &amp; BI</div><h3>nextjs-b2b-bi-dashboard-starter</h3><p data-i18n="b4">Dashboard ejecutivo de KPIs, tracking MRR/SLA y API JSON tipada para portales B2B.</p></div>
-            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">TypeScript</span></div>
+            <div><div class="card-tag" data-i18n="bp4_tag">PORTALES B2B &amp; BI</div><h3>nextjs-b2b-bi-dashboard-starter</h3><p data-i18n="b4">Dashboard ejecutivo de KPIs, tracking MRR/SLA y API JSON tipada para portales B2B.</p></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="view_repo">Ver repositorio →</span><span class="tag-price">TypeScript</span></div>
           </a>
           <a class="card" href="https://github.com/agenciaiaonline-wq/enterprise-rag-fastapi-starter" target="_blank" rel="noopener">
             <div><div class="card-tag">PRIVATE RAG &amp; PDF</div><h3>enterprise-rag-fastapi-starter</h3><p data-i18n="b5">API FastAPI + Qdrant con citas de página verificadas y extracción estructurada de PDFs.</p></div>
-            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">Python · FastAPI</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="view_repo">Ver repositorio →</span><span class="tag-price">Python · FastAPI</span></div>
           </a>
           <a class="card" href="https://github.com/agenciaiaonline-wq/claude-code-hermes-24-7-automation" target="_blank" rel="noopener">
             <div><div class="card-tag">AUTONOMOUS DEVOPS</div><h3>claude-code-hermes-24-7-automation</h3><p data-i18n="b6">Stack 24/7 con Claude Code CLI, Hermes Agent, OmniRoute failover, Watchdog y Docker.</p></div>
-            <div class="card-meta"><span class="tag-emerald">Ver repositorio →</span><span class="tag-price">Python · Docker</span></div>
+            <div class="card-meta"><span class="tag-emerald" data-i18n="view_repo">Ver repositorio →</span><span class="tag-price">Python · Docker</span></div>
           </a>
         </div>
       </div>
@@ -418,17 +433,17 @@
         </div>
         <div class="grid-3">
           <div class="card">
-            <div class="card-tag">PASO 01 · DÍA 1</div>
+            <div class="card-tag" data-i18n="step1_tag">PASO 01 · DÍA 1</div>
             <h3 data-i18n="pr1_t">Auditoría Gratis de 15 Min</h3>
             <p data-i18n="pr1_d">Analizamos tu web, embudo o procesos actuales y te entregamos un roadmap claro con presupuesto cerrado y retorno estimado.</p>
           </div>
           <div class="card">
-            <div class="card-tag">PASO 02 · DÍAS 2–14</div>
+            <div class="card-tag" data-i18n="step2_tag">PASO 02 · DÍAS 2–14</div>
             <h3 data-i18n="pr2_t">Sprint Cerrado con Demos</h3>
             <p data-i18n="pr2_d">Construimos con arquitectura modular, seguridad RLS/RBAC, pruebas automáticas y avances visibles cada pocos días.</p>
           </div>
           <div class="card">
-            <div class="card-tag">PASO 03 · ENTREGA</div>
+            <div class="card-tag" data-i18n="step3_tag">PASO 03 · ENTREGA</div>
             <h3 data-i18n="pr3_t">Despliegue y Control Total</h3>
             <p data-i18n="pr3_d">Todo queda desplegado en tu nube/servidor y repositorio GitHub. Cero dependencia oculta; soporte SLA mensual solo si lo necesitas.</p>
           </div>
@@ -447,7 +462,7 @@
     <section id="faq">
       <div class="container">
         <div class="sec-head">
-          <span class="eyebrow">PREGUNTAS FRECUENTES</span>
+          <span class="eyebrow" data-i18n="faq_eye">PREGUNTAS FRECUENTES</span>
           <h2 data-i18n-html="faq_title">Respuestas directas antes de <span class="gold">empezar</span></h2>
         </div>
         <div class="faq-list">
@@ -489,20 +504,26 @@
   <script>
     const i18n = {
       es: {
+        page_title: "Golden Nodalix — Sistemas Digitales, Webs & Agentes IA 24/7",
+        lang_btn: "EN / ES",
         nav_services: "Servicios", nav_calc: "Calculadora ROI", nav_blueprints: "Blueprints", nav_process: "Proceso", nav_cta: "Auditoría Gratis",
         hero_eyebrow: "DIGITAL & AI SOLUTIONS STUDIO · EN / ES · REMOTO GLOBAL",
         hero_title: 'Sistemas Digitales, Webs &amp; Agentes IA que <span class="gold">Venden y Escalan 24/7</span>',
         hero_lead: "Ayudamos a negocios, agencias y empresas B2B a captar más clientes y recortar costos operativos: desde webs de alta conversión y agentes WhatsApp/CRM hasta SaaS MVPs y rescate de apps IA en 7–14 días.",
         hero_cta1: "Solicitar Diagnóstico Gratis (WhatsApp)", hero_cta2: "Ver Código en Producción (GitHub)",
+        kpi1_v: "7–14 días", kpi2_v: "< 10 seg",
         kpi1: "Entrega de sprints cerrados en producción", kpi2: "Respuesta automática 24/7 en WhatsApp & Web", kpi3: "Ahorro mensual migrando Zapier/Make a n8n", kpi4: "Propiedad del código en tu propio GitHub",
         pain_eye: "EL CUELLO DE BOTELLA REAL", pain_title: 'Por qué hoy los negocios pierden <span class="gold">ventas y margen</span> cada semana',
         pain_sub: "No te falta más teoría ni otra suscripción cara: necesitas sistemas digitales conectados que conviertan tráfico en caja sin fricción.",
+        p2_tag: "02 · CONVERSIÓN WEB", p3_tag: "03 · COSTOS SAAS",
         p1_t: "Leads que se enfrían por responder tarde", p1_d: "Si un cliente escribe por WhatsApp o formulario web y nadie responde en menos de 5 minutos, compra con tu competencia. Instalamos agentes IA 24/7 que cotizan y agendan al instante.",
         p2_t: "Webs lentas que no generan reuniones", p2_d: "Sitios genéricos sin propuesta clara ni embudo conectado al CRM. Diseñamos webs ultrarrápidas en Next.js con copywriting B2B orientado a llamadas y cierres.",
         p3_t: "Facturas infladas en Zapier, Make y herramientas", p3_d: "Pagar por cada tarea ejecutada frena tu crecimiento. Migramos tus flujos a n8n self-hosted sobre Docker con Redis y PostgreSQL reduciendo costos hasta un 80%.",
         p4_t: "Prototipos hechos con IA que fallan en producción", p4_d: "Apps creadas en Lovable, Bolt.new, v0 o Replit con tablas Supabase abiertas, llaves filtradas o Stripe roto. Las auditamos y blindamos en 5–10 días para que puedas facturar.",
         srv_eye: "SERVICIOS DIGITALES PRODUCTIZADOS", srv_title: 'Soluciones llave en mano con <span class="gold">alcance y retorno claro</span>',
         srv_sub: "Cada servicio se entrega documentado, testeado y corriendo en tu infraestructura con 100% de propiedad del código.",
+        s1_tag: "VENTAS & ATENCIÓN 24/7", s2_tag: "WEB & LANDINGS CRO", s4_tag: "RESCATE & SEGURIDAD", s5_tag: "AUTOMATIZACIÓN & OPS", s6_tag: "IA PRIVADA & DATOS",
+        d_7_10: "7–10 días", d_7_14: "7–14 días", d_10_14: "10–14 días", d_5_10: "5–10 días", p_80: "-80% gasto SaaS",
         s1_t: "Agentes IA en WhatsApp, Web & CRM", s1_d: "Calificación automática de clientes, respuestas con tu catálogo/PDFs, dedupe con Redis, registro en CRM y reserva directa en Cal.com/Google Calendar.",
         s2_t: "Webs de Alta Conversión & Portales", s2_d: "Sitios corporativos, landing pages B2B y portales de clientes en Next.js 15 + TypeScript optimizados para SEO, velocidad Core Web Vitals y captación.",
         s3_t: "SaaS MVPs & Dashboards BI", s3_d: "Plataformas multi-tenant listas para cobrar: autenticación, roles RBAC, Supabase PostgreSQL RLS, webhooks idempotentes de Stripe y métricas MRR/SLA.",
@@ -515,6 +536,7 @@
         c_r1: "Ahorro anual estimado en licencias (Zapier → n8n Docker)", c_r2: "Ingresos mensuales recuperables (+10% conversión por respuesta <10s)", c_btn: "Enviar este escenario por WhatsApp →",
         bp_eye: "PORTAFOLIO AUDITABLE EN GITHUB", bp_title: '6 Blueprints Reales que Puedes <span class="gold">Inspeccionar Hoy</span>',
         bp_sub: "Cada repositorio demuestra arquitectura limpia, seguridad RLS y foco en resultados comerciales reales.",
+        bp4_tag: "PORTALES B2B & BI", view_repo: "Ver repositorio →",
         b1: "Motor comercial 24/7 con WAHA, Redis dedupe, PostgreSQL y agenda automática en Cal.com.",
         b2: "Starter Next.js 15 App Router + Supabase RLS estricto + RBAC + webhooks de Stripe.",
         b3: "Auditoría de 35 puntos, SQL RLS y escáner de secretos para Lovable, Bolt, v0 y Replit.",
@@ -522,32 +544,39 @@
         b5: "API FastAPI + Qdrant con citas de página verificadas y extracción estructurada de PDFs.",
         b6: "Stack 24/7 con Claude Code CLI, Hermes Agent, OmniRoute failover, Watchdog y Docker.",
         pr_eye: "METODOLOGÍA SIN RIESGO", pr_title: 'Cómo pasamos de tu necesidad a <span class="gold">producción en 3 pasos</span>',
+        step1_tag: "PASO 01 · DÍA 1", step2_tag: "PASO 02 · DÍAS 2–14", step3_tag: "PASO 03 · ENTREGA",
         pr1_t: "Auditoría Gratis de 15 Min", pr1_d: "Analizamos tu web, embudo o procesos actuales y te entregamos un roadmap claro con presupuesto cerrado y retorno estimado.",
         pr2_t: "Sprint Cerrado con Demos", pr2_d: "Construimos con arquitectura modular, seguridad RLS/RBAC, pruebas automáticas y avances visibles cada pocos días.",
         pr3_t: "Despliegue y Control Total", pr3_d: "Todo queda desplegado en tu nube/servidor y repositorio GitHub. Cero dependencia oculta; soporte SLA mensual solo si lo necesitas.",
         g_t: "Garantía Golden Nodalix: 100% Propiedad del Código + Cero Lock-in",
         g_d: "Cupos limitados a 2 sprints productivos por mes para garantizar ejecución senior directa.", g_cta: "Reservar Diagnóstico →",
-        faq_title: 'Respuestas directas antes de <span class="gold">empezar</span>',
+        faq_eye: "PREGUNTAS FRECUENTES", faq_title: 'Respuestas directas antes de <span class="gold">empezar</span>',
         f1_q: "¿El código y las automatizaciones quedan a mi nombre?", f1_a: "Sí, 100%. Entregamos repositorios, workflows n8n, bases de datos y documentación técnica directamente en tu GitHub y servidores propios.",
         f2_q: "¿Trabajan solo con empresas tech o también con negocios tradicionales?", f2_a: "Con ambos. Implementamos webs y bots de ventas en WhatsApp para clínicas, inmobiliarias, e-commerce y agencias, además de SaaS MVPs y RAG para startups B2B.",
         f3_q: "¿Cómo iniciamos sin compromiso?", f3_a: "Escríbenos por WhatsApp o LinkedIn con la palabra \"AUDITORIA\". En menos de 15 minutos evaluamos tu caso y te damos un plan accionable.",
         foot_sub: "Lima, Perú · Remoto Mundial (LATAM · USA · Europa · EN / ES)", wa_float: "💬 WhatsApp Directo"
       },
       en: {
+        page_title: "Golden Nodalix — Digital Systems, Webs & 24/7 AI Agents",
+        lang_btn: "ES / EN",
         nav_services: "Services", nav_calc: "ROI Calculator", nav_blueprints: "Blueprints", nav_process: "Process", nav_cta: "Free Audit",
         hero_eyebrow: "DIGITAL & AI SOLUTIONS STUDIO · EN / ES · REMOTE WORLDWIDE",
         hero_title: 'Digital Systems, Webs &amp; AI Agents That <span class="gold">Sell &amp; Scale 24/7</span>',
         hero_lead: "We help businesses, agencies, and B2B teams capture more leads and slash operational costs: from high-converting websites and WhatsApp/CRM AI agents to SaaS MVPs and AI app rescues in 7–14 days.",
         hero_cta1: "Request Free Audit (WhatsApp)", hero_cta2: "Inspect Production Code (GitHub)",
+        kpi1_v: "7–14 days", kpi2_v: "< 10 sec",
         kpi1: "Turnkey sprint delivery into production", kpi2: "24/7 automated reply on WhatsApp & Web", kpi3: "Monthly savings migrating Zapier/Make to n8n", kpi4: "Full source code ownership on your GitHub",
         pain_eye: "THE REAL BOTTLENECK", pain_title: 'Why businesses lose <span class="gold">deals and margin</span> every week',
         pain_sub: "You don't need another overpriced SaaS tool—you need connected digital systems that turn traffic into revenue automatically.",
+        p2_tag: "02 · WEB CONVERSION", p3_tag: "03 · SAAS BLOAT",
         p1_t: "Leads going cold from slow replies", p1_d: "If a prospect messages your WhatsApp or web form and waits over 5 minutes, they buy elsewhere. We deploy 24/7 AI agents that quote and book instantly.",
         p2_t: "Slow websites that fail to convert", p2_d: "Generic sites with weak positioning and zero CRM routing. We ship ultra-fast Next.js websites with B2B conversion copy engineered for booked calls.",
         p3_t: "Bloated Zapier, Make & SaaS bills", p3_d: "Paying per-task penalties slows growth. We migrate your critical workflows to self-hosted n8n on Docker + Redis + PostgreSQL, cutting costs up to 80%.",
         p4_t: "Vibe-coded AI prototypes breaking at launch", p4_d: "Lovable, Bolt.new, v0, or Replit apps with open Supabase tables, leaked keys, or broken Stripe webhooks. We harden and ship them in 5–10 days.",
         srv_eye: "PRODUCTIZED DIGITAL SERVICES", srv_title: 'Turnkey systems with <span class="gold">fixed scope &amp; clear ROI</span>',
         srv_sub: "Every deliverable ships documented, tested, and running on your own infrastructure with 100% code ownership.",
+        s1_tag: "24/7 SALES & SUPPORT", s2_tag: "CRO WEBS & PORTALS", s4_tag: "SECURITY & RESCUE", s5_tag: "AUTOMATION & OPS", s6_tag: "PRIVATE AI & DATA",
+        d_7_10: "7–10 days", d_7_14: "7–14 days", d_10_14: "10–14 days", d_5_10: "5–10 days", p_80: "-80% SaaS cost",
         s1_t: "24/7 WhatsApp, Web & CRM AI Agents", s1_d: "Automated lead qualification, RAG catalog quoting, Redis dedupe/debounce, CRM sync, and instant Cal.com/Google Calendar booking.",
         s2_t: "High-Conversion Webs & B2B Portals", s2_d: "Corporate websites, CRO landing pages, and client portals built on Next.js 15 + TypeScript for top Core Web Vitals and pipeline conversion.",
         s3_t: "SaaS MVPs & Real-Time BI Dashboards", s3_d: "Revenue-ready multi-tenant platforms: auth, RBAC, strict Supabase RLS, idempotent Stripe billing, and executive MRR/SLA metrics.",
@@ -560,6 +589,7 @@
         c_r1: "Estimated annual license savings (Zapier → n8n Docker)", c_r2: "Monthly recoverable revenue (+10% lift from <10s reply)", c_btn: "Send this scenario on WhatsApp →",
         bp_eye: "AUDITABLE GITHUB PORTFOLIO", bp_title: '6 Production Blueprints You Can <span class="gold">Inspect Today</span>',
         bp_sub: "Every repository demonstrates clean architecture, RLS security, and real commercial outcomes.",
+        bp4_tag: "B2B PORTALS & BI", view_repo: "Inspect repo →",
         b1: "24/7 sales engine with WAHA, Redis dedupe, PostgreSQL & Cal.com auto-booking.",
         b2: "Next.js 15 App Router + strict Supabase RLS + RBAC + idempotent Stripe webhooks.",
         b3: "35-point checklist, SQL RLS audits & secret scanner for Lovable, Bolt, v0 & Replit.",
@@ -567,12 +597,13 @@
         b5: "FastAPI + Qdrant retrieval with page citations & structured PDF extraction.",
         b6: "24/7 stack with Claude Code CLI, Hermes Agent, OmniRoute failover, Watchdog & Docker.",
         pr_eye: "ZERO-FRICTION METHODOLOGY", pr_title: 'From bottleneck to <span class="gold">production in 3 steps</span>',
+        step1_tag: "STEP 01 · DAY 1", step2_tag: "STEP 02 · DAYS 2–14", step3_tag: "STEP 03 · HANDOFF",
         pr1_t: "Free 15-Min Growth Audit", pr1_d: "We inspect your site, funnel, or workflow and deliver a clear roadmap with fixed pricing and projected ROI.",
         pr2_t: "Fixed 7–14 Day Sprint", pr2_d: "Modular engineering with RLS/RBAC security, automated checks, and visible progress milestones.",
         pr3_t: "Deployment & Full Ownership", pr3_d: "Deployed cleanly on your cloud and GitHub repo. Zero vendor lock-in; optional SLA retainer only if you want one.",
         g_t: "Golden Nodalix Guarantee: 100% Source Ownership + Zero Lock-in",
         g_d: "Limited to 2 active sprint slots per month to guarantee direct senior engineering.", g_cta: "Book Free Audit →",
-        faq_title: 'Direct answers before <span class="gold">we start</span>',
+        faq_eye: "FREQUENTLY ASKED QUESTIONS", faq_title: 'Direct answers before <span class="gold">we start</span>',
         f1_q: "Do I own 100% of the code and automations?", f1_a: "Yes. Repositories, n8n workflows, databases, and technical docs are delivered straight to your GitHub and cloud infrastructure.",
         f2_q: "Do you work only with tech startups or also traditional businesses?", f2_a: "Both. We build high-converting websites and WhatsApp AI sales bots for clinics, real estate, e-commerce, and agencies, as well as SaaS MVPs and RAG for B2B startups.",
         f3_q: "How do we start with zero commitment?", f3_a: "Message us on WhatsApp or LinkedIn with \"AUDIT\". Within 15 minutes we review your case and share an actionable plan.",
@@ -580,11 +611,14 @@
       }
     };
 
+    const fmtUsd = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
     let currentLang = "es";
     function applyLang(lang) {
       currentLang = lang;
       document.documentElement.lang = lang;
       const dict = i18n[lang];
+      document.title = dict.page_title;
+      document.getElementById("langToggle").textContent = dict.lang_btn;
       document.querySelectorAll("[data-i18n]").forEach(el => {
         const k = el.getAttribute("data-i18n");
         if (dict[k]) el.textContent = dict[k];
@@ -608,11 +642,11 @@
       const annualSave = Math.max(0, (z - selfHostCost) * 12);
       const revLift = Math.round(l * 0.10 * t);
 
-      document.getElementById("vZapier").textContent = `$${z.toLocaleString()}/mo`;
-      document.getElementById("vLeads").textContent = `${l.toLocaleString()} / mo`;
-      document.getElementById("vTicket").textContent = `$${t.toLocaleString()}`;
-      document.getElementById("outSaasSave").textContent = `$${annualSave.toLocaleString()} / ${currentLang === "es" ? "año" : "yr"}`;
-      document.getElementById("outRevLift").textContent = `+$${revLift.toLocaleString()} / ${currentLang === "es" ? "mes" : "mo"}`;
+      document.getElementById("vZapier").textContent = `$${fmtUsd.format(z)}/mo`;
+      document.getElementById("vLeads").textContent = `${fmtUsd.format(l)} / mo`;
+      document.getElementById("vTicket").textContent = `$${fmtUsd.format(t)}`;
+      document.getElementById("outSaasSave").textContent = `$${fmtUsd.format(annualSave)} / ${currentLang === "es" ? "año" : "yr"}`;
+      document.getElementById("outRevLift").textContent = `+$${fmtUsd.format(revLift)} / ${currentLang === "es" ? "mes" : "mo"}`;
 
       const msg = currentLang === "es"
         ? `Hola Golden Nodalix, calculé mi ROI: gasto $${z}/mes en SaaS, recibo ${l} leads/mes (ticket $${t}). Quiero mi auditoría gratuita.`
